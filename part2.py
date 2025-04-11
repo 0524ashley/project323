@@ -1,8 +1,7 @@
 # CPSC 323 Project 2 - LL(1) Predictive Parser
 # Author: Ashley Park
 
-# --- Predictive Parsing Table ---
-# Each non-terminal maps to a dictionary of terminals and their corresponding productions
+# predictive parsing_table
 parsing_table = {
     'E': {'a': ['T', 'Q'], '(': ['T', 'Q']},
     'Q': {'+': ['+', 'T', 'Q'], '-': ['-', 'T', 'Q'], ')': ['ε'], '$': ['ε']},
