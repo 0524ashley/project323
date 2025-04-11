@@ -1,5 +1,35 @@
-# CPSC 323 Project 2 - LL(1) Predictive Parser
-# Author: Ashley Park
+"""
+CPSC 323 – Project 2: LL(1) Predictive Parser
+Author: Ashley Park
+Date: April 2025
+Filename: part2.py
+
+Description:
+-------------
+This program implements a predictive parser for a simplified arithmetic expression grammar 
+based on a given context-free grammar (CFG) and a predictive parsing table. It accepts input 
+strings composed of symbols from the set { a, +, -, *, /, (, ), $ }, processes them using a 
+stack-based LL(1) parsing technique, and determines if the input is valid according to the grammar.
+
+The program also prints a detailed trace of the parsing process, including stack state, remaining 
+input, and actions taken at each step (such as matching terminals or applying production rules).
+
+GNU General Public License:
+----------------------------
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+""" 
+
 
 # predictive parsing_table
 parsing_table = {
